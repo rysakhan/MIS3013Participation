@@ -6,7 +6,7 @@ namespace SumOf3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello MIS!");
+            Console.WriteLine("Hello MIS!!");
         }
     }
 }
