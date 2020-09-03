@@ -27,7 +27,7 @@ namespace ClassSepThree
             
             else if (hazardousResponse == "no")
             {
-                hazardousBoolean == false;
+                hazardousBoolean = false;
             }
 
             else
