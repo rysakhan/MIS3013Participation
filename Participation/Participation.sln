@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassSepThree", "ClassSepTh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzzRK", "FizzBuzzRK\FizzBuzzRK.csproj", "{D674B7DC-A650-492F-B071-413C190225AB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coin Toss", "Coin Toss\Coin Toss.csproj", "{C92C3BDF-50AA-42C4-8EDB-0AC02C0C5A6F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{D674B7DC-A650-492F-B071-413C190225AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D674B7DC-A650-492F-B071-413C190225AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D674B7DC-A650-492F-B071-413C190225AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C92C3BDF-50AA-42C4-8EDB-0AC02C0C5A6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C92C3BDF-50AA-42C4-8EDB-0AC02C0C5A6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C92C3BDF-50AA-42C4-8EDB-0AC02C0C5A6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C92C3BDF-50AA-42C4-8EDB-0AC02C0C5A6F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
