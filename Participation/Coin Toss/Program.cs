@@ -9,14 +9,20 @@ namespace Coin_Toss
             Random rnd = new Random();
             int number = rnd.Next(1, 3);
 
-            if (number == 1)
-            {
-                Console.WriteLine("Heads");
-            }
+            Console.WriteLine("Guess heads or tails >>");
+            string Answer = Console.ReadLine();
 
+            if (number == 1 && Answer == "heads")
+            {
+                Console.WriteLine("You ae correct!");
+            }
+            else if (number == 2 && Answer == "tails")
+            {
+                Console.WriteLine("You are correct!");
+            }
             else
             {
-                Console.WriteLine("Tails");
+                Console.WriteLine("WRONG!");
             }
 
         }

@@ -11,7 +11,7 @@ namespace FizzBuzzRK
 
             if ((number % 3 == 0) && (number % 5 == 0))
             {
-                Console.WriteLine("FizzBuzz");
+                Console.WriteLine("Fizz Buzz");
             }
             else if (number % 3 == 0)
             {
