@@ -7,24 +7,53 @@ namespace CollectionsMinMaxAvg
     {
         static void Main(string[] args)
         {
-            //List<double> Examgrades = new List<double>();
+            List<int> ExamGrades = new List<int>();
 
-            Console.WriteLine("How many exam grades are there >>>");
-            int NumOfExams = Convert.ToInt32(Console.ReadLine());
+            int max = 0;
+            int min = 0;
+            int avg = 0;
+            int sum = 0;
+           
 
-            int[] ExamGrades = new int[NumOfExams - 1];
-            int Exam = 0;
+            Console.WriteLine("What is your exam grade >>>");
+            int grade = Convert.ToInt32(Console.ReadLine());
 
-            for (int i = 0; i < NumOfExams - 1; i++)
+
+            Console.WriteLine("Do you have another entry? >>>>");
+            string userInput = Console.ReadLine();
+
+            while (userInput.ToLower() == "yes")
             {
-                Console.WriteLine("Enter exam grade >>>");
-                 Exam = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("What is your exam grade >>>");
+                grade = Convert.ToInt32(Console.ReadLine());
+                ExamGrades.Add(grade);
 
-                ExamGrades[i] = new int[Exam];
+                Console.WriteLine("Do you have another entry? >>>>");
             }
 
-            Console.WriteLine(ExamGrades);
+            max = ExamGrades[0];
+            min = ExamGrades[0];
+            for (int i = 0; i < ExamGrades.Count; i++)
+            {
 
+                if (ExamGrades[i] > max)
+                    max = ExamGrades[i];
+                if (ExamGrades[i] < min)
+                    min = ExamGrades[i];
+                sum += ExamGrades[i];
+
+            }
+
+            avg = sum / ExamGrades.Count;
+
+            Console.WriteLine("The maximum is " + max);
+            Console.WriteLine("The minimum is " + min);
+            Console.WriteLine("The average is " + avg);
+
+            //int[] ExamGrades = new int[NumOfExams - 1];
+
+
+            ExamGrades.ForEach(Console.WriteLine);
         }
     }
 }
