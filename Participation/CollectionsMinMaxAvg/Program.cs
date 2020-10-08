@@ -29,6 +29,7 @@ namespace CollectionsMinMaxAvg
                 ExamGrades.Add(grade);
 
                 Console.WriteLine("Do you have another entry? >>>>");
+                userInput = Console.ReadLine();
             }
 
             max = ExamGrades[0];
