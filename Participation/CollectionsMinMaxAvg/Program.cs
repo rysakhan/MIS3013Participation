@@ -54,7 +54,7 @@ namespace CollectionsMinMaxAvg
             //int[] ExamGrades = new int[NumOfExams - 1];
 
 
-            ExamGrades.ForEach(Console.WriteLine);
+            //ExamGrades.ForEach(Console.WriteLine);
         }
     }
 }
