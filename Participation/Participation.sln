@@ -23,6 +23,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CollectionsMinMaxAvg", "Col
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Processing a CSV File - 2", "Processing a CSV File - 2\Processing a CSV File - 2.csproj", "{62CC3B2E-B042-42D9-9AB8-AA7924B74D99}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simple Methods", "Simple Methods\Simple Methods.csproj", "{7AB4A48F-CD39-4AB4-AE91-CB87C8FF8C54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleMethods", "SimpleMethods\SimpleMethods.csproj", "{D8CEBF19-4373-48EA-ACA5-069ED9717996}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,14 @@ Global
 		{62CC3B2E-B042-42D9-9AB8-AA7924B74D99}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62CC3B2E-B042-42D9-9AB8-AA7924B74D99}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62CC3B2E-B042-42D9-9AB8-AA7924B74D99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AB4A48F-CD39-4AB4-AE91-CB87C8FF8C54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AB4A48F-CD39-4AB4-AE91-CB87C8FF8C54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AB4A48F-CD39-4AB4-AE91-CB87C8FF8C54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AB4A48F-CD39-4AB4-AE91-CB87C8FF8C54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8CEBF19-4373-48EA-ACA5-069ED9717996}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8CEBF19-4373-48EA-ACA5-069ED9717996}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8CEBF19-4373-48EA-ACA5-069ED9717996}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8CEBF19-4373-48EA-ACA5-069ED9717996}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
