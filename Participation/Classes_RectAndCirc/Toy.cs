@@ -32,12 +32,12 @@ namespace Classes_RectAndCirc
 
         public string GetAisle()
         {
-            char UpperManu = Manufacturer[0].ToUpper();
+            string UpperManu = Manufacturer[0].ToString();
             Random rand = new Random();
             int RandomNumber = rand.Next(0, 24);
-            string result = UpperManu
+            string result = UpperManu + RandomNumber.ToString();
 
-
+            return result;
         }
 
     }
