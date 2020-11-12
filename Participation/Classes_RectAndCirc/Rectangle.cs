@@ -14,15 +14,13 @@ namespace Classes_RectAndCirc
         public Rectangle()
         {
             Length = 0;
+            Width = 0;
         }
 
-        public Circle(double length)
+        public Rectangle(double length, double width)
         {
             Length = length;
-        }
-
-        public Rectangle()
-        {
+            Width = width;
 
         }
 

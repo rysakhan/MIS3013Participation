@@ -15,5 +15,13 @@ namespace Classes_Toy
         {
             Toys = new List<Toy>();
         }
+
+        public double GetRandomToy()
+        {
+            Random rnd = new Random();
+            int RandomToy = rnd.Next(0, Toy.Count);
+            Toy RandomToyName = Toys[RandomToy];
+            return RandomToy;
+        }
     }
 }
