@@ -31,7 +31,7 @@ namespace Classes_RectAndCirc
 
         public double CalculatePerimeter()
         {
-            return 2(Length + Width);
+            return Length + Width + Length + Width;
         }
     }
 }

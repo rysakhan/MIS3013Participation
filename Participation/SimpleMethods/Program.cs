@@ -14,7 +14,7 @@ namespace SimpleMethods
             {
             string Animal = AnimalInput();
             string sound = Speak(Animal);
-            Console.WriteLine(sound);o
+            Console.WriteLine(sound);
             Console.ReadKey();
             }
 
