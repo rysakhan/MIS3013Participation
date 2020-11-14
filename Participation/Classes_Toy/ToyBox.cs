@@ -19,7 +19,7 @@ namespace Classes_Toy
         public double GetRandomToy()
         {
             Random rnd = new Random();
-            int RandomToy = rnd.Next(0, Toy.Count);
+            int RandomToy = rnd.Next(0, ToyBox.Count);
             Toy RandomToyName = Toys[RandomToy];
             return RandomToy;
         }
