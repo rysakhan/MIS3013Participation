@@ -40,7 +40,6 @@ namespace Classes_Toy
                 double toyPrice = Convert.ToDouble(Console.ReadLine());
                 newToy.Price = toyPrice;
 
-
             }
 
             Console.ReadKey();
