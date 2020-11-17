@@ -16,12 +16,12 @@ namespace Classes_Toy
             Toys = new List<Toy>();
         }
 
-        public double GetRandomToy()
+        public Toy GetRandomToy()
         {
             Random rnd = new Random();
-            int RandomToy = rnd.Next(0, ToyBox.Count);
-            Toy RandomToyName = Toys[RandomToy];
-            return RandomToy;
+            int RandomToy = rnd.Next(0, Toys.Count);
+            return Toys[RandomToy];
+            //return RandomToy;
         }
     }
 }

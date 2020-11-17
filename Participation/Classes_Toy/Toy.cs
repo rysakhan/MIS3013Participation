@@ -7,7 +7,7 @@ namespace Classes_Toy
         public string Manufacturer { get; set; }
         public string Name { get; set; }
         public double Price { get; set; }
-        private string Notes { get; set; }
+        private string Notes;
 
         public Toy()
         {
@@ -30,6 +30,16 @@ namespace Classes_Toy
             Random rnd = new Random();
             int num = rnd.Next(1, 24);
             return Manufacturer[1] + num.ToString();
+        }
+
+        public void setNotes(string notesMessage)
+        {
+            Notes = notesMessage;
+        }
+
+        public string printNotes()
+        {
+                return Notes;
         }
 
 

@@ -10,37 +10,49 @@ namespace Classes_Toy
     {
         static void Main(string[] args)
         {
+            
+            
             Toy myToy = new Toy();
-            myToy.Manufacturer = "Rida Raza";
-            myToy.Name = "Doctor";
-            myToy.Price = 70;
-            //myToy.Notes = "Becoming a doctor";
+            myToy.Manufacturer = "Play Doh";
+            myToy.Name = "Yellow Play Doh";
+            myToy.Price = 0.70;
+            myToy.setNotes("not edible.");
 
             Toy toy2 = new Toy();
-            toy2.Manufacturer = "Sana Raza";
-            toy2.Name = "Psychology";
-            toy2.Price = 54;
+            toy2.Manufacturer = "Play Douh";
+            toy2.Name = "Blue Play doh";
+            toy2.Price = 2.3;
+            toy2.setNotes("not edible.");
 
-            List<Toy> MyToyBox = new List<Toy>();
-            MyToyBox.Add(myToy);
-            MyToyBox.Add(toy2);
+            Toy toy3 = new Toy();
+            toy3.Manufacturer = "Play Doh";
+            toy3.Name = "Green Play Doh";
+            toy3.Price = 5.4;
+            toy3.setNotes("not edible.");
 
-            Console.WriteLine("Would you like to add a toy box?");
-            string toyboxAnswer = Console.ReadLine();
+            Toy toy4 = new Toy();
+            toy4.Manufacturer = "Play Doh";
+            toy4.Name = "Orange Play Doh";
+            toy4.Price = 1.4;
+            toy4.setNotes("not edible.");
 
-            while(toyboxAnswer.ToLower() == "yes")
-            {
-                Console.WriteLine(" What is the name of the toy?");
-                string userAnswer = Console.ReadLine();
-                Toy newToy = new Toy();
-                newToy.Name = userAnswer;
-                Console.WriteLine(" Who is the manufacturer?");
-                newToy.Manufacturer = Console.ReadLine();
-                Console.WriteLine(" What is the price?");
-                double toyPrice = Convert.ToDouble(Console.ReadLine());
-                newToy.Price = toyPrice;
+            ToyBox MyToyBox = new ToyBox();
+            MyToyBox.Toys.Add(myToy);
+            MyToyBox.Toys.Add(toy2);
 
-            }
+
+            ToyBox RysaToyBox = new ToyBox();
+            MyToyBox.Toys.Add(toy3);
+            MyToyBox.Toys.Add(toy4);
+
+            Toy randomToy = MyToyBox.GetRandomToy();
+            Console.WriteLine("The random toy from MyToyBox is " + randomToy.Name + " by the manufacturer " + randomToy.Manufacturer + " and the price is " + randomToy.Price + " and the note is " + randomToy.printNotes());
+
+            Toy randomToy2 = RysaToyBox.GetRandomToy();
+            Console.WriteLine("The random toy from RysaToyBox is " + randomToy2.Name + " by the manufacturer " + randomToy2.Manufacturer + " and the price is " + randomToy2.Price + " and the note is " + randomToy2.printNotes());
+
+
+
 
             Console.ReadKey();
         }
