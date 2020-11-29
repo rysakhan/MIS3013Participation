@@ -14,6 +14,13 @@ namespace TextBox
             myText.Texts = "Hi folks!";
 
             myText.DisplayText();
+
+            myText.Padding = 50;
+            myText.BackColor = ConsoleColor.DarkYellow;
+            myText.ForeColor = ConsoleColor.Yellow;
+            myText.Texts = "Goodbye yall!";
+
+            myText.DisplayText();
         }
     }
 }
